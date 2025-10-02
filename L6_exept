@@ -1,0 +1,7 @@
+pool = 1000
+quantity = int(input("Enter the number of mailings: "))
+try:
+    chunk = pool // quantity   # размер пакета SMS на одну рассылку
+    print(chunk)
+except ZeroDivisionError:
+    print("Division by zero is not allowed.")
